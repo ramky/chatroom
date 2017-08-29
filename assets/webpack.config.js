@@ -84,7 +84,11 @@ module.exports = {
 			title: 'Hot Module Replacement'
 		}),
 		new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin({filename: "css/app.css", disable: true, allChunks: true}),
+    new ExtractTextPlugin({
+      filename: "css/app.css",
+      disable: true,
+      allChunks: true
+    }),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
